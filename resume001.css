@@ -1,0 +1,218 @@
+/* !Basics styles */
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
+  display: flex;
+  width: auto;
+  min-height: 100vh;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(251, 109, 58, .7)
+}
+a:active {
+  color: rgba(251, 109, 58, .3)
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+  margin: 0;
+}
+
+.title {
+  margin: 0 0 25px;
+  line-height: initial;
+  font-size: 22px;
+}
+
+/* !Aside: Photo & Skills */
+.about {
+  color: #fff;
+  background-color: #1E2939;
+  /* width 30.8% (370px) from template width (1200px)*/
+  flex: 1 0 calc(100vw - (((100vw - 1200px) / 2) + (1200px * 0.6917)));
+
+}
+.about__container {
+  width: 370px;
+  height: 100vh;
+  margin-left: auto;
+  padding-top: 40px;
+}
+.about__adds {
+  margin: 50px 40px;
+}
+
+.adds__title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.adds__table {
+  font-size: 14px;
+}
+
+.adds__table th {
+  font-weight: 700;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
+
+.adds__table td {
+  opacity: 0.5;
+  padding-bottom: 10px;
+}
+
+.adds__list {
+  margin: 0;
+}
+.adds__item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.adds__item::marker {
+  color:#FB6D3A;
+}
+
+/* !Wrapper & Main Section */
+.wrapper {
+  flex: 1 0 calc(100vw - (((100vw - 1200px) / 2) + (1200px * 0.3018)));
+}
+.main,
+.projects,
+.expirience,
+.edu {
+  max-width: 830px;
+  min-width: 750px;
+  padding: 50px 217px 25px 88px;
+}
+.main h2 {
+  font-size: 14px;
+}
+.main h1 {
+  font-size: 45px;
+  margin: 45px 0 24px;
+}
+
+
+/* !Projects */
+
+.list {
+  color: #595959;
+}
+.project__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project__link {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+  cursor: alias;
+}
+.projects__address {
+  flex: 0 0 auto;
+}
+.projects__dots {
+  border-bottom: 1px dashed #ababab;
+  margin-bottom: 7px;
+  flex: 1 1 auto;
+  margin-right: 5px;
+}
+.projects__techs {
+  flex: 0 0 auto;
+}
+.projects__techs::before {
+  content: '[';
+  font-weight: 700;
+  color: #000000;
+}
+
+.projects__techs::after {
+  content: ']';
+  font-weight: 700;
+  color: #000000;
+}
+
+/* !Companies */
+
+.company__title {
+  font-size: 16px;
+  line-height: initial;
+}
+.company__title span {
+  color: #FB6D3A;
+}
+.company__period {
+  font-size: 12px;
+  line-height: initial;
+  color: #ababab;
+}
+
+.company__place::before {
+  content: "|";
+  color: #000;
+  font-weight: 700;
+}
+
+
+/* !Education */
+
+.edu__title {
+  font-size: 26px;
+}
+.edu__study {
+  font-size: 16px;
+}
+.edu__study span {
+  color: #fb6d3a;
+}
+.edu__profile {
+  font-size: 14px;
+}
+.edu__period {
+  font-size: 12px;
+  line-height: initial;
+  color: #ababab;
+}
+
+.edu__place::before {
+  content: "|";
+  color: #000;
+  font-weight: 700;
+}

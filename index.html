@@ -1,35 +1,161 @@
 <!DOCTYPE html>
-<html lang="uk">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <title>Моя перша сторінка</title>
-</head>
-<body>
-  <header>
-    <ul>
-      <li>
-        <a href="#" title="Тимчасово не доступно. В процесі. Майте терпіння, Рим не за 1 день побудували :-)">Портфоліо</a>
-      </li>
-      <li>
-        <a href="stock/stock.html" title="Б/В електроніка на продаж, переважно для ПК">Барахолка</a>
-      </li>
-    </ul>
-  </header>
-  <main>
-    <h1>Вітаю!</h1>
-  </main>
-  <section>
-  <p>Це сторінка мого особистого портфоліо, де Я буду викладати свою працю у вигляді посилань.</p>
-    <p>Привіт, світ!</p>
-  </section>
-  <footer>
-    <p>Авторські права закріплені за мною. Readme.md буде додано з часом.</p>
-  </footer>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"/>
+    <link rel="stylesheet" href="resume001.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Malishenko Dmytro - a WEB Developer. Portfolio. Main page</title>
+  </head>
+  <body>
+    <aside class="about">
+      <div class="about__container">
+        <picture>
+          <source type="image/webp" srcset="img/photo_211111_@x1.webp 1x, img/photo_211111_@x2.webp 2x">
+          <img src="img/photo_211111_@x1.jpg" srcset="img/photo_211111_@x1.jpg 1x, img/photo_211111_@x2.jpg.png 2x" width="370" height="370"  alt="I`m working">
+        </picture>
+
+        <div class="about__adds adds">
+          <h3 class="adds__title">Contacts</h3>
+          <table class="adds__table">
+            <tr>
+              <th>C:</th>
+              <td><a href="tel:+380501546361">+380 50 154 63 61</a></td>
+            </tr>
+            <tr>
+              <th>C:</th>
+              <td><a href="tel:+380930313222">+380 93 0 313 222</a></td>
+            </tr>
+            <tr>
+              <th>E:</th>
+              <td><a href="mailto:MalishenkoDV@gmail.com" target="_blank">MalishenkoDV@gmail.com</a></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="about__adds adds">
+          <h3 class="adds__title">Tech Skills</h3>
+          <ul class="adds__list">
+            <li class="adds__item">HTML5</li>
+            <li class="adds__item">CSS3</li>
+            <li class="adds__item">JavaScript</li>
+            <li class="adds__item">GIT</li>
+            <li class="adds__item">Gulp / Grunt</li>
+            <li class="adds__item">AngularJS 12.0</li>
+            <li class="adds__item">Responsive</li>
+          </ul>
+        </div>
+
+        <div class="about__adds">
+          <h3 class="adds__title">Soft Skills</h3>
+          <ul class="adds__list">
+            <li class="adds__item">Scrum</li>
+            <li class="adds__item">Agile</li>
+            <li class="adds__item">GTD</li>
+            <li class="adds__item">Teamwork</li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <div class="wrapper">
+    <main class="main">
+      <h2>Front-End Developer / HTML Coder</h2>
+      <h1>Dmitro Malishenko</h1>
+      <p>
+        Hi, my name is Dima! I`m a junior WEB Developer. How can I help You?<br>
+        I am  using next technologies:
+        HTML/Haml/Pug; CSS/Less/SASS; ES5/ES6/Angular 12; Photoshop/Figma/Zeppelin; BEM metodology; Gulp/Grunt/Webpack; npm; Git; SVG; and of course Google.
+        I suffer from perfectionism, have immunity to refactoring someone else's code; Mobile-first / Desktop-first; Progressive enhancement / Gradual degradation; Cross-browsing layout whis(out) Bootstrap; do not have &#60div&#62 -atosis; read at night whatwg; fast self-learning (especially noticeable in the presence of more experienced employees on this issue).
+      </p>
+    </main>
+    <section class="projects">
+      <h3 class="projects__title title">Projects</h3>
+      <ol class="project__list list">
+        <li>
+          <a href="https://malishenkodv.github.io/SuperGym/" class="project__link" target="_blank">
+            <span class="projects__address">https://malishenkodv.github.io/SuperGym/</span>
+            <span class="projects__dots"></span>
+            <span class="projects__techs"> HTML5, CSS3, JavaScript </span>
+          </a>
+        </li>
+        <li>
+          <a href="projects.html" class="project__link">
+            <span class="projects__address">List of my projects</span>
+            <span class="projects__dots"></span>
+            <span class="projects__techs"> Other page </span>
+          </a>
+        </li>
+      </ol>
+    </section>
+    <section class="expirience">
+      <h3 class="expirience__title title">Work Experience</h3>
+
+      <div class="expirience__company">
+        <h4 class="company__title">
+          Technical support service <span>IP BcBig.net</span></h4>
+        <p class="company__period">
+          <span class="company__dates">October 2020 - july 2021 </span>
+          <span class="company__place"> Country</span>
+        </p>
+        <ul class="company__list list">
+          <li>Site health support;</li>
+          <li>Bug fixes (after modules updating);</li>
+          <li>Writing and publishing articles.</li>
+        </ul>
+      </div>
+
+      <div class="expirience__company">
+        <h4 class="company__title">Manager <span>TOV "Yurbit-PC"</span></h4>
+        <p class="company__period">
+          <span class="company__dates">January 2013 - March 2016 </span>
+          <span class="company__place"> Country</span>
+        </p>
+        <ul class="company__list list">
+          <li>
+            Selling of computer and office technics and periphery;
+          </li>
+          <li>(De/Re) Assembling of Personal computers;</li>
+          <li>Consulting for choosing parts and components.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="edu">
+      <h3 class="edu__title">Education</h3>
+      <div class="edu__container">
+        <h4 class="edu__study">
+          <span>
+            <a href="https://htmlacademy.ru/profile/id521953" target="_blank">HTML Academy</a>
+          </span>
+        </h4>
+        <h5 class="edu__profile">Front-End developer</h5>
+        <p class="edu__period">
+          <span class="edu__dates">from october 2017 </span>
+          <span class="edu__place"> Online</span>
+        </p>
+      </div>
+      <div class="edu__container">
+        <h4 class="edu__study">
+          <span>
+            <a href="https://btsau.edu.ua/" target="_blank"> BILA TSERKVA NATIONAL AGRARIAN UNIVERSITY </a>
+          </span>
+        </h4>
+        <h5 class="edu__profile">Management of foreign economic activity</h5>
+        <p class="edu__period">
+          <span class="edu__dates">September 2009 - May 2014</span>
+          <span class="edu__place"> Country</span>
+        </p>
+      </div>
+    </section>
+  </div>
+  </body>
 </html>
